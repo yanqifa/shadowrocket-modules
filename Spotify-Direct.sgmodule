@@ -1,0 +1,45 @@
+#!name=Spotify 直连
+#!desc=将 Spotify 专属域名和音频 CDN 设为 DIRECT。全局路由请选择「配置」。不保证去广告或地区可用性。
+#!author=yanqifa
+#!homepage=https://github.com/yanqifa/shadowrocket-modules
+
+# SPDX-License-Identifier: GPL-2.0-only
+# Updated: 2026-10-24
+# Domain references:
+# https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Shadowrocket/Spotify/Spotify.list
+# https://github.com/v2fly/domain-list-community/blob/master/data/spotify
+# 29 domain rules. Standalone module; no remote rule-set dependencies.
+
+[Rule]
+# Spotify services, login, artwork, audio and short links
+DOMAIN-SUFFIX,byspotify.com,DIRECT
+DOMAIN-SUFFIX,lifeatspotify.com,DIRECT
+DOMAIN-SUFFIX,pscdn.co,DIRECT
+DOMAIN-SUFFIX,scdn.co,DIRECT
+DOMAIN-SUFFIX,spoti.fi,DIRECT
+DOMAIN-SUFFIX,spotify-everywhere.com,DIRECT
+DOMAIN-SUFFIX,spotify.app.link,DIRECT
+DOMAIN-SUFFIX,spotify.com,DIRECT
+DOMAIN-SUFFIX,spotify.design,DIRECT
+DOMAIN-SUFFIX,spotify.link,DIRECT
+DOMAIN-SUFFIX,spotifycdn.com,DIRECT
+DOMAIN-SUFFIX,spotifycdn.net,DIRECT
+DOMAIN-SUFFIX,spotifycharts.com,DIRECT
+DOMAIN-SUFFIX,spotifycodes.com,DIRECT
+DOMAIN-SUFFIX,spotifyforbrands.com,DIRECT
+DOMAIN-SUFFIX,spotifyforvendors.com,DIRECT
+DOMAIN-SUFFIX,spotifyjobs.com,DIRECT
+DOMAIN-SUFFIX,spotifynewsroom.jp,DIRECT
+DOMAIN-SUFFIX,spotilocal.com,DIRECT
+DOMAIN-SUFFIX,tospotify.com,DIRECT
+
+# Spotify-specific CDN hostnames on shared providers
+DOMAIN,audio4-ak-spotify-com.akamaized.net,DIRECT
+DOMAIN,cdn-spotify-experiments.conductrics.com,DIRECT
+DOMAIN,heads-ak-spotify-com.akamaized.net,DIRECT
+DOMAIN,spotify.com.edgesuite.net,DIRECT
+DOMAIN,spotify.map.fastly.net,DIRECT
+DOMAIN,spotify.map.fastlylb.net,DIRECT
+DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net,DIRECT
+DOMAIN-SUFFIX,heads4-ak-spotify-com.akamaized.net,DIRECT
+DOMAIN-SUFFIX,spotify-com.akamaized.net,DIRECT
